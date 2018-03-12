@@ -1,6 +1,7 @@
 package Jaeger;
 
 import Giant.Giant;
+import Kaiju.Kaiju;
 
 public abstract class Jaeger extends Giant {
     private String countryOfOrigin;
@@ -12,6 +13,10 @@ public abstract class Jaeger extends Giant {
 
     public String getCountryOfOrigin() {
         return this.countryOfOrigin;
+    }
+
+    public void rocketPunch(Kaiju kaiju) {
+        kaiju.loseHealth(getAttackValue());
     }
 
 }

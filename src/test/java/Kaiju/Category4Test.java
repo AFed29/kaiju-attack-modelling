@@ -34,6 +34,12 @@ public class Category4Test {
     }
 
     @Test
+    public void canLoseHealth() {
+        category4.loseHealth(50);
+        assertEquals(350, category4.getHealthValue());
+    }
+
+    @Test
     public void canFly() {
         assertEquals("Otachi flies away...", category4.fly());
     }

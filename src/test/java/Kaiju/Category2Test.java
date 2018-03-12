@@ -32,4 +32,10 @@ public class Category2Test {
     public void canRoar() {
         assertEquals("Raww", category2.roar());
     }
+
+    @Test
+    public void canLoseHealth() {
+        category2.loseHealth(40);
+        assertEquals(160, category2.getHealthValue());
+    }
 }

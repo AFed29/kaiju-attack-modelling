@@ -22,4 +22,8 @@ public abstract class Giant {
     public int getAttackValue() {
         return attackValue;
     }
+
+    public void loseHealth(int attack) {
+        this.healthValue -= attack;
+    }
 }
