@@ -5,31 +5,31 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class Category1Test {
-    private Category1 category1;
+public class Category3Test {
+    private Category3 category3;
 
     @Before
     public void before() {
-        category1 = new Category1("Trespasser");
+        category3 = new Category3("Knifehead");
     }
 
     @Test
     public void canGetName() {
-        assertEquals("Trespasser", category1.getName());
+        assertEquals("Knifehead", category3.getName());
     }
 
     @Test
     public void canGetHealthValue() {
-        assertEquals(100, category1.getHealthValue());
+        assertEquals(300, category3.getHealthValue());
     }
 
     @Test
     public void canGetAttackValue() {
-        assertEquals(30, category1.getAttackValue());
+        assertEquals(90, category3.getAttackValue());
     }
 
     @Test
     public void canRoar() {
-        assertEquals("rawww", category1.roar());
+        assertEquals("Roar!", category3.roar());
     }
 }
