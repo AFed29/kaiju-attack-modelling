@@ -1,6 +1,7 @@
 package Jaeger;
 
-import DamageInterface.Damage;
+import DamageInterface.IDamage;
+import DamageInterface.IDamage;
 import Giant.Giant;
 
 public abstract class Jaeger extends Giant {
@@ -15,7 +16,7 @@ public abstract class Jaeger extends Giant {
         return this.countryOfOrigin;
     }
 
-    public void rocketPunch(Damage victim) {
+    public void rocketPunch(IDamage victim) {
         victim.loseHealth(getAttackValue());
     }
 

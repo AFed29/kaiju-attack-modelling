@@ -1,6 +1,6 @@
 package Kaiju;
 
-import DamageInterface.Damage;
+import DamageInterface.IDamage;
 import Giant.Giant;
 
 public abstract class Kaiju extends Giant {
@@ -11,7 +11,7 @@ public abstract class Kaiju extends Giant {
 
     public abstract String roar();
 
-    public void slash(Damage victim) {
+    public void slash(IDamage victim) {
         victim.loseHealth(getAttackValue());
     }
 }

@@ -1,5 +1,6 @@
 package DamageInterface;
 
-public interface Damage {
+public interface IDamage {
+    int getHealthValue();
     void loseHealth(int attack);
 }
