@@ -1,7 +1,7 @@
 package Kaiju;
 
+import DamageInterface.Damage;
 import Giant.Giant;
-import Jaeger.Jaeger;
 
 public abstract class Kaiju extends Giant {
 
@@ -11,7 +11,7 @@ public abstract class Kaiju extends Giant {
 
     public abstract String roar();
 
-    public void slash(Jaeger jaeger) {
-        jaeger.loseHealth(getAttackValue());
+    public void slash(Damage victim) {
+        victim.loseHealth(getAttackValue());
     }
 }

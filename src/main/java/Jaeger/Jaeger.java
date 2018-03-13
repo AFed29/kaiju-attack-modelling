@@ -1,7 +1,7 @@
 package Jaeger;
 
+import DamageInterface.Damage;
 import Giant.Giant;
-import Kaiju.Kaiju;
 
 public abstract class Jaeger extends Giant {
     private String countryOfOrigin;
@@ -15,8 +15,8 @@ public abstract class Jaeger extends Giant {
         return this.countryOfOrigin;
     }
 
-    public void rocketPunch(Kaiju kaiju) {
-        kaiju.loseHealth(getAttackValue());
+    public void rocketPunch(Damage victim) {
+        victim.loseHealth(getAttackValue());
     }
 
 }

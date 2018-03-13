@@ -1,6 +1,9 @@
 package Giant;
 
-public abstract class Giant {
+
+import DamageInterface.Damage;
+
+public abstract class Giant implements Damage {
     private String name;
     private int healthValue;
     private int attackValue;
